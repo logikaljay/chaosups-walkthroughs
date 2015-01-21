@@ -1,0 +1,20 @@
+<% layout('../../../views/layout.ejs') -%>
+
+<form method="post" enctype="multipart/form-data">
+    <h3>Upload a Walkthrough</h3>
+    <div class='form-group'>
+        <label class='control-label res-clabel' for='title'>Title</label>
+        <input class='form-control' id='title' name='title' type='text' />
+    </div>
+
+    <div class='form-group'>
+        <label class='control-label res-clabel' for='file'>Upload file</label>
+        <input class='form-control' id='file' name='file' type='file' />
+    </div>
+
+    <div class='form-group'>
+        <a href="/walkthroughs/list" class='btn btn-warning'>Cancel</a>
+        <button class='btn btn-info pull-right'>Upload</button>
+    </div>
+
+</form>
